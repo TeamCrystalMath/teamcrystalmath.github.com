@@ -11,8 +11,10 @@ Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.ht
 
 
   {% for post in site.posts %}
+  <ul class="posts">
     <h2><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h2><span>{{ post.date | date_to_string }}</span><br>
     {{ post.content }}
+    </ul>
   {% endfor %}
 
 
